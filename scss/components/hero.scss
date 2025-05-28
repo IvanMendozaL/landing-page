@@ -1,0 +1,76 @@
+.container{
+
+    // Hero
+    .hero{
+        position: relative;
+        min-height: 90dvh;
+        width: 100%;
+        overflow: hidden;
+        @include flex-box(center, center, "column nowwrap");
+
+        // Imagen de fondo
+        figure{
+            min-height: 100dvh;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            z-index: 0;
+        }
+        
+        img{
+            width: 100%;
+            aspect-ratio: 16/9;
+            height: 100dvh;
+            object-fit: cover;
+            transition: 1.5s 0.01s ease-in-out;
+            overflow: hidden;
+        }
+
+        &:hover img{
+            transform: scale(1.03);
+        }
+
+        // Contenido del gero
+        .details{
+            z-index: 1;
+            backdrop-filter: blur(10px);
+            background-color: rgba($color: #FAFAFA, $alpha: 0.5);
+            @include flex-box(center, center, "column nowrap");
+            row-gap: 10px;
+            padding: 20px 50px;
+            border-radius: 10px;
+
+            h2{
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            section{
+
+                h3{
+                    font-size: 3rem;
+                }
+
+                h4{
+                    text-align: center;
+                    font-size: 3rem;
+                    letter-spacing: 10px;
+                }
+            }
+
+            a{
+                background-color: var(--black);
+                color: var(--white-text);
+                text-decoration: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                transition: 0.3s 0.01s ease-in-out;
+                margin-top: 20px;
+
+                &:hover{
+                    background-color: var(--link-hover);
+                }
+            }
+        }
+    }
+}
