@@ -79,11 +79,12 @@
                 position: relative;
                 @include flex-box(center, center, "column nowwrap");
                 column-gap: 20px;
-                cursor: pointer;
+                width: 250px;
                 
                 &-item{
                     position: relative;
                     padding: 2px;
+                    cursor: pointer;
                     transition: .3s .01s ease-in-out;
 
                     &:hover{
@@ -114,6 +115,31 @@
         // Nav
         .nav{
             @include flex-box(space-around, center, "column nowwrap");
+            font-weight: 600;
+            
+            a{
+                text-decoration: none;
+                color: var(--black);
+                padding-inline: 25px;
+                padding-block: 25px;
+                transition: .3s 0.01s ease-in-out;
+                @include flex-box(space-around, center, "column nowwrap");
+                column-gap: 15px;
+                
+                &:hover{
+                    background-color: var(--link-hover-white);
+                }
+            }
+
+            ul{
+                @include flex-box(center, center, "column nowwrap");
+                list-style: none;
+                
+                li{
+                    @include flex-box(center, center, "column nowwrap");
+                }
+
+            }
         }
     }
 }

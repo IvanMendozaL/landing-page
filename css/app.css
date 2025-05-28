@@ -10,6 +10,7 @@
   --black-text: #333333;
   --placeholder: #757575;
   --link-hover: #494949;
+  --link-hover-white: #f0f0f0;
   --border-gray: #dfdfdf;
 }
 
@@ -105,11 +106,12 @@
   align-items: center;
   flex-flow: column nowwrap;
   column-gap: 20px;
-  cursor: pointer;
+  width: 250px;
 }
 .container .header .main-header .account-details-item {
   position: relative;
   padding: 2px;
+  cursor: pointer;
   transition: 0.3s 0.01s ease-in-out;
 }
 .container .header .main-header .account-details-item:hover {
@@ -137,6 +139,35 @@
 .container .header .nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowwrap;
+  font-weight: 600;
+}
+.container .header .nav a {
+  text-decoration: none;
+  color: var(--black);
+  padding-inline: 25px;
+  padding-block: 25px;
+  transition: 0.3s 0.01s ease-in-out;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowwrap;
+  column-gap: 15px;
+}
+.container .header .nav a:hover {
+  background-color: var(--link-hover-white);
+}
+.container .header .nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowwrap;
+  list-style: none;
+}
+.container .header .nav ul li {
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-flow: column nowwrap;
 }
