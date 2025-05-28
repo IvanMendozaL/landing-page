@@ -1,0 +1,144 @@
+/* Fuente externa Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --bg-primary: #FAF8F2;
+  --beige-teal: #F1EDE7;
+  --gray-acent: #ebebeb;
+  --white: #FAFAFA;
+  --black: #333333;
+  --white-text: #FAFAFA;
+  --black-text: #333333;
+  --placeholder: #757575;
+  --link-hover: #494949;
+  --border-gray: #dfdfdf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100dvh;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container .header {
+  width: 100%;
+}
+.container .header .info {
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 600;
+  padding-inline: 40px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowwrap;
+}
+.container .header .info-options {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowwrap;
+}
+.container .header .info-options-item {
+  text-decoration: none;
+  color: var(--white);
+  padding-inline: 20px;
+  padding-block: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowwrap;
+  column-gap: 5px;
+  transition: 0.2s 0.01s ease-in-out;
+}
+.container .header .info-options-item:hover {
+  background-color: var(--link-hover);
+}
+.container .header .main-header {
+  border-bottom: 1px solid var(--border-gray);
+  padding-block: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowwrap;
+}
+.container .header .main-header .search {
+  overflow: hidden;
+  border-radius: 5px;
+}
+.container .header .main-header .search .input {
+  background-color: var(--gray-acent);
+  padding: 10px 15px;
+}
+.container .header .main-header .search .input input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+  width: 250px;
+  color: var(--black);
+}
+.container .header .main-header .search .input input::placeholder {
+  color: var(--placeholder);
+}
+.container .header .main-header .search .input i {
+  color: var(--black);
+  cursor: pointer;
+}
+.container .header .main-header img {
+  width: 150px;
+  aspect-ratio: 146/36;
+}
+.container .header .main-header .account-details {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowwrap;
+  column-gap: 20px;
+  cursor: pointer;
+}
+.container .header .main-header .account-details-item {
+  position: relative;
+  padding: 2px;
+  transition: 0.3s 0.01s ease-in-out;
+}
+.container .header .main-header .account-details-item:hover {
+  color: var(--link-hover);
+}
+.container .header .main-header .account-details-item i {
+  font-size: 1.5rem;
+}
+.container .header .main-header .account-details-item .bubble {
+  position: absolute;
+  top: -30%;
+  right: -30%;
+  border-radius: 50%;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-size: 700;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowwrap;
+}
+.container .header .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowwrap;
+}
+
+/*# sourceMappingURL=app.css.map */

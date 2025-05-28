@@ -1,0 +1,119 @@
+.container{
+
+    // Estilos de encabezado general
+    .header{
+        width: 100%;
+        
+        // Estilos del primer banner informativo
+        .info{
+            background-color: var(--black);
+            color: var(--white);
+            font-weight: 600;
+            padding-inline: 40px;
+            font-size: 0.9rem;
+            @include flex-box(space-between, center, "column nowwrap");
+            
+            &-options{
+                list-style: none;
+                @include flex-box(center, center, "column nowwrap");
+                
+                &-item{
+                    text-decoration: none;
+                    color: var(--white);
+                    padding-inline: 20px;
+                    padding-block: 10px;
+                    @include flex-box(center, center, "row nowwrap");
+                    column-gap: 5px;
+                    transition: .2s .01s ease-in-out;
+
+                    &:hover{
+                        background-color: var(--link-hover);
+                    }
+                }
+            }
+        }
+
+        // Estilos de la sección media
+        .main-header{
+            border-bottom: 1px solid var(--border-gray);
+            padding-block: 10px;
+            @include flex-box(space-around, center, "column nowwrap");
+
+            // Seccion de busqueda
+            .search{
+                overflow: hidden;
+                border-radius: 5px;
+
+                .input{
+                    background-color: var(--gray-acent);
+                    padding: 10px 15px;
+                
+                    input{
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        font-size: 1rem;
+                        width: 250px;
+                        color: var(--black);
+                    
+                        &::placeholder{
+                            color: var(--placeholder);
+                        }
+                    }
+
+                    i{
+                        color: var(--black);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            // Logo
+            img{
+                width: 150px;
+                aspect-ratio: 146/36;
+            }
+
+            // Acciones y detalles de la cuenta
+            .account-details{
+                position: relative;
+                @include flex-box(center, center, "column nowwrap");
+                column-gap: 20px;
+                cursor: pointer;
+                
+                &-item{
+                    position: relative;
+                    padding: 2px;
+                    transition: .3s .01s ease-in-out;
+
+                    &:hover{
+                        color: var(--link-hover);
+                    }
+                    
+                    i{
+                        font-size: 1.5rem;
+                    }
+                    
+                    .bubble{
+                        position: absolute;
+                        top: -30%;
+                        right: -30%;
+                        border-radius: 50%;
+                        background-color: var(--black);
+                        color: var(--white);
+                        font-size: 0.8rem;
+                        font-size: 700;
+                        width: 18px;
+                        height: 18px;
+                        @include flex-box(center, center, "column nowwrap");
+                    }
+                }
+            }
+        }
+
+        // Nav
+        .nav{
+            @include flex-box(space-around, center, "column nowwrap");
+        }
+    }
+}
