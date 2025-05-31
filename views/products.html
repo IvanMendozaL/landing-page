@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Archivo externo de css -->
-    <link rel="stylesheet" href="./css/app.css">
+        <!-- Archivo externo de css -->
+    <link rel="stylesheet" href="../css/app.css">
     <!-- Iconografía -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Landing page</title>
+    <title>Products</title>
 </head>
 <body>
+
     <!-- Contenedor principal -->
     <div class="container">
-
+        
         <!-- Encabezado de la pagina -->
         <header class="header">
 
@@ -56,7 +57,9 @@
 
                 <!-- Logo -->
                 <figure>
-                    <img src="./assets/images/logo-siman.png" alt="">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo-siman.png" alt="">
+                    </a>
                 </figure>
 
                 <!-- Acciones y detalles de la cuenta -->
@@ -97,7 +100,7 @@
                 <!-- Listado de opciones general de menu -->
                 <ul>
                     <li>
-                        <a href="#">HOME</a>
+                        <a href="../index.html">HOME</a>
                     </li>
                     <li>
                         <a href="#">
@@ -127,158 +130,42 @@
 
         </header>
 
-        <!-- Hero -->
-        <section class="hero">
+        <!-- Banner -->
+        <div class="banner">
+            <h1>Productos</h1>
+        </div>
 
-            <!-- Fondo -->
-            <figure>
-                <img src="./assets/images/main/father-sport.jpg" alt="hero_image" loading="lazy">
-            </figure>
+        <div class="products-grid">
 
-            <!-- Detalle -->
-            <div class="details">
-                <h2>Artículos deportivos y fitness lifestyle</h2>
-                
-                <section>
-                    <h3>Quiero seguir tus pasos</h3>
-                    <h4>PAPÁ</h4>
-                </section>
+            <!-- filters -->
+            <div class="filters">
+                <h3>Filtros</h3>
 
-                <p>Productos que papá amará</p>
-                
-                <a href="./views/products.html">Comprar</a>
-            </div>
+                <!-- Grupo de opcion de filtro -->
+                <div class="filters-group">
+                    <strong>Marca</strong>
 
-        </section>
+                    <!-- Opciones de filtro -->
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" name="marca1" id="marca1">
+                            <label for="marca1">Nike</label>
+                        </div>
 
-        <!-- Categories -->
-        <section class="categories">
-
-            <!-- Descripción del área de las categorias -->
-            <div class="categories-description">
-                <h3>Las categorías mas destacadas</h3>
-                <p>Descubre productos que </p>
-            </div>
-
-            <!-- Listado de categorías -->
-            <div class="categories-options">
-
-                <!-- Categoría -->
-                <div class="category">
-                    <figure>
-                        <a href="#">
-                            <img src="./assets/images/categories/category1.jpg" alt="Category_1" loading="lazy">
-                        </a>
-                    </figure>
-
-                    <div class="category-detail">
-                        <p>Calzado para mujer</p>
-                        <a href="#">Comprar ahora</a>
-                    </div>
-                </div>
-
-                <!-- Categoría -->
-                <div class="category">
-                    <figure>
-                        <a href="#">
-                            <img src="./assets/images/categories/category2.jpg" alt="Category_2" loading="lazy">
-                        </a>
-                    </figure>
-
-                    <div class="category-detail">
-                        <p>Ropa de caballero</p>
-                        <a href="#">Comprar ahora</a>
-                    </div>
-                </div>
-
-                <!-- Categoría -->
-                <div class="category">
-                    <figure>
-                        <a href="#">
-                            <img src="./assets/images/categories/category3.jpg" alt="Category_3" loading="lazy">
-                        </a>
-                    </figure>
-
-                    <div class="category-detail">
-                        <p>Articulos de mujer</p>
-                        <a href="#">Comprar ahora</a>
-                    </div>
-                </div>
-
-                <!-- Categoría -->
-                <div class="category">
-                    <figure>
-                        <a href="#">
-                            <img src="./assets/images/categories/category5.jpg" alt="Category_4" loading="lazy">
-                        </a>
-                    </figure>
-
-                    <div class="category-detail">
-                        <p>Nuevas colecciones</p>
-                        <a href="#">Comprar ahora</a>
+                        <div class="option">
+                            <input type="checkbox" name="marca2" id="marca2">
+                            <label for="marca2">Nike</label>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Linea de medio -->
-            <hr>
-        </section>
-
-        <!-- Sales -->
-        <section class="sales">
-            
-            <!-- sale -->
-            <div class="sale">
-
-                <!-- Descripcion de la oferta -->
-                <div class="sale-detail">
-                    <p>COLECCIONES 2025</p>
-                    <h3>Texto de ejemplo en el que se muestra el detalle</h3>
-                    <a href="#">
-                        Comprar ahora
-                    </a>
-                </div>
-                <span></span>
+            <!-- List -->
+            <div class="list">
+                <h2>Listado de productos</h2>
             </div>
-            
-            <!-- sale -->
-            <div class="sale">
+        </div>
 
-                <!-- Descripcion de la oferta -->
-                <div class="sale-detail">
-                    <p>ÚLTIMO EN TECNOLOGÍA</p>
-                    <h3>Este es otro texto de ejemplo para ver el detalle</h3>
-                    <a href="#">
-                        Comprar ahora
-                    </a>
-                </div>
-                <span></span>
-            </div>
-            
-            <!-- sale -->
-            <div class="sale">
-                
-                <!-- Descripcion de la oferta -->
-                <div class="sale-detail">
-                    <p>ZAPATOS DE COLECCIÓN</p>
-                    <h3>Aquí ya no se que poner alv</h3>
-                    <a href="#">
-                        Comprar ahora
-                    </a>
-                </div>
-                <span></span>
-            </div>
-        </section>
-
-        <!-- Subscribe section -->
-        <section class="subscribe">
-            <h2>Suscribete a nuestro boletín de noticias y avisos</h2>
-            <p>Suscríbete a nuestro último boletín para recibir noticias sobre descuentos especiales y próximas ventas.</p>
-            <form method="" action="" class="input-subscribe">
-                <input type="text" placeholder="ejemplo@gmail.com" minlength="3" maxlength="255">
-                <button>SUBSCRIBETE</button>
-            </form>
-        </section>
 
         <!-- Footer page -->
         <footer class="footer">
@@ -295,13 +182,13 @@
                     <section>
                         <figure>
                             <a href="">
-                                <img src="./assets/images/footer/app_store.png" alt="">
+                                <img src="../assets/images/footer/app_store.png" alt="">
                             </a>
                         </figure>
 
                         <figure>
                             <a href="">
-                                <img src="./assets/images/footer/play_store.png" alt="">
+                                <img src="../assets/images/footer/play_store.png" alt="">
                             </a>
                         </figure>
                     </section>
@@ -435,6 +322,6 @@
         </footer>
     </div>
 
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

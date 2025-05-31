@@ -239,6 +239,18 @@
   background-color: var(--link-hover);
 }
 
+.container .banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg-primary);
+  padding-block: 30px;
+  padding-inline: 100px;
+}
+.container .banner h1, .container .banner h2, .container .banner h3 {
+  font-size: 1.5rem;
+}
+
 .categories {
   position: relative;
   overflow: hidden;
@@ -396,6 +408,37 @@
   background-color: var(--link-hover);
 }
 
+.products-grid {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid red;
+  padding-block: 50px;
+  padding-inline: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+}
+.products-grid .filters {
+  border: 2px solid blue;
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column nowrap;
+  row-gap: 15px;
+}
+.products-grid .filters-group {
+  width: 100%;
+  border: 2px solid cyan;
+}
+.products-grid .list {
+  border: 2px solid orange;
+  width: 100%;
+}
+
 .subscribe {
   position: relative;
   overflow: hidden;
@@ -408,6 +451,7 @@
   align-items: center;
   flex-flow: column nowrap;
   row-gap: 20px;
+  text-align: center;
 }
 .subscribe h2 {
   letter-spacing: 3px;
@@ -572,6 +616,12 @@
 }
 .container .footer .social-media .payment i:nth-child(3) {
   color: #0070e0;
+}
+
+@media screen and (width <= 1100px) {
+  .container {
+    background-color: red;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

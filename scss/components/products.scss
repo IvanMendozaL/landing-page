@@ -1,0 +1,27 @@
+.products-grid{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid red;
+    padding-block: 50px;
+    padding-inline: 100px;
+    @include flex-box(start, start, "row nowrap");
+    column-gap: 20px;
+    
+    .filters{
+        border: 2px solid blue;
+        width: 30%;
+        @include flex-box(start, start, "column nowrap");
+        row-gap: 15px;
+
+        &-group{
+            width: 100%;
+            border: 2px solid cyan;
+        }
+    }
+    
+    .list{
+        border: 2px solid orange;
+        width: 100%;
+    }
+}
