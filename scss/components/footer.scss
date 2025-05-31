@@ -1,0 +1,133 @@
+.container{
+
+    .footer{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        background-color: var(--white);
+        padding-top : 50px;
+        padding-inline: 100px;
+        @include flex-box(space-between, center, "column nowrap");
+        row-gap: 20px;
+        
+        .about-enterprise{
+            width: 100%;
+            @include flex-box(space-between, top, "row nowrap");
+            column-gap: 15px;
+            padding-bottom: 80px;
+            
+            .col{
+                @include flex-box(start, start, "column nowrap");
+                row-gap: 10px;
+                color: var(--gray);
+
+                p{
+                    width: 90%;
+                }
+
+                section{
+                    @include flex-box(start, start, "row nowrap");
+                    column-gap: 10px;
+                    
+                    img{
+                        width: 150px;
+                    }
+                }
+                
+                ul{
+                    list-style: none;
+                    @include flex-box(start, start, "column nowrap");
+                    row-gap: 15px;
+
+                    li{
+
+                        a{
+                            text-decoration: none;
+                            font-size: 0.9rem;
+                            color: var(--gray);
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col:nth-child(1){
+                width: 35%;
+            }
+
+            .col:nth-child(2){
+                width: 15%;
+            }
+
+            .col:nth-child(3){
+                width: 15%;
+            }
+
+            .col:nth-child(4){
+                width: 15%;
+            }
+
+            .col:nth-child(5){
+                width: 20%;
+            }
+        }
+        
+        .social-media{
+            width: 100%;
+            padding-block: 20px;
+            padding-bottom: 30px;
+            border-top: 2px solid #d1d1d1;
+            @include flex-box(space-between, center, "row nowrap");
+            
+            .social{
+                @include flex-box(space-between, center, "row nowrap");
+                column-gap: 20px;
+                font-size: 1.6rem;
+                
+                .link{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    @include flex-box(center, center, "row nowrap");
+                    background-color: var(--gray-acent);
+                    transition: .3s .01s ease-in-out;
+                    text-decoration: none;
+                    color: var(--black);
+                    
+                    &:hover{
+                        background-color: var(--link-hover-white);
+                    }
+
+                    &:nth-child(1):hover{
+                        color: #3b5998;
+                    }
+
+                    &:nth-child(2):hover{
+                        color: #a34193;
+                    }
+                }
+            }
+
+            .payment{
+                @include flex-box(center, center, "row nowrap");
+                column-gap: 15px;
+                font-size: 1.9rem;
+
+                i:nth-child(1){
+                    color: #3b5998;
+                }
+
+                i:nth-child(2){
+                    color: #FF5F00;
+                }
+
+                i:nth-child(3){
+                    color: #0070e0;
+                }
+            }
+        }
+    }
+}

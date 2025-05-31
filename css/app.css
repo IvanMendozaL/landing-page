@@ -2,10 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 :root {
   --bg-primary: #FAF8F2;
+  --bg-secondary: #f0ede4;
   --beige-teal: #F1EDE7;
   --gray-acent: #ebebeb;
   --white: #FAFAFA;
   --black: #333333;
+  --gray: #797979;
   --white-text: #FAFAFA;
   --black-text: #333333;
   --placeholder: #757575;
@@ -235,6 +237,341 @@
 }
 .container .hero .details a:hover {
   background-color: var(--link-hover);
+}
+
+.categories {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--bg-primary);
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  row-gap: 25px;
+}
+.categories-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+}
+.categories-description h3 {
+  font-size: 1.5rem;
+}
+.categories-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+  width: 100%;
+}
+.categories-options .category {
+  width: 20%;
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-flow: column nowrap;
+  row-gap: 15px;
+  transition: 0.3s 0.01s ease-in-out;
+}
+.categories-options .category figure {
+  width: 100%;
+  height: 210px;
+}
+.categories-options .category figure img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
+}
+.categories-options .category-detail {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.categories-options .category-detail p {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.categories-options .category-detail a {
+  font-size: 0.9rem;
+  color: var(--black);
+  text-decoration: none;
+}
+.categories-options .category-detail a:hover {
+  text-decoration: underline;
+}
+.categories-options .category:hover {
+  background-color: var(--link-hover-white);
+}
+.categories hr {
+  background-color: rgb(185, 185, 185);
+  height: 1px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.container .sales {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--white);
+  padding-bottom: 50px;
+  padding-inline: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+}
+.container .sales .sale {
+  position: relative;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+  min-height: 230px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-flow: row nowrap;
+  row-gap: 15px;
+  padding: 20px;
+}
+.container .sales .sale:nth-child(1) {
+  background: url("../../assets/images/sales/sale1.jpg") no-repeat center center/cover;
+}
+.container .sales .sale:nth-child(2) {
+  background: url("../../assets/images/sales/sale2.jpg") no-repeat center center/cover;
+}
+.container .sales .sale:nth-child(3) {
+  background: url("../../assets/images/sales/sale3.jpg") no-repeat center center/cover;
+}
+.container .sales .sale span {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent);
+  min-height: 230px;
+}
+.container .sales .sale-detail {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column nowrap;
+  row-gap: 10px;
+  color: var(--white);
+  z-index: 10;
+  position: relative;
+  width: 100%;
+}
+.container .sales .sale-detail p {
+  text-transform: uppercase;
+}
+.container .sales .sale-detail h3 {
+  font-size: 1.4rem;
+  width: 60%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.container .sales .sale-detail a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px 15px;
+  transition: 0.3s 0.01s ease-in-out;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowwrap;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: var(--black);
+}
+.container .sales .sale-detail a:hover {
+  background-color: var(--link-hover);
+}
+
+.subscribe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  padding-block: 50px;
+  padding-inline: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+  row-gap: 20px;
+}
+.subscribe h2 {
+  letter-spacing: 3px;
+}
+.subscribe .input-subscribe {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+}
+.subscribe .input-subscribe input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border: 2px solid var(--black);
+}
+.subscribe .input-subscribe button {
+  border: none;
+  outline: none;
+  background-color: var(--black);
+  padding-inline: 10px;
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s 0.01s ease-in-out;
+}
+.subscribe .input-subscribe button:hover {
+  background-color: var(--link-hover);
+}
+
+.container .footer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--white);
+  padding-top: 50px;
+  padding-inline: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+  row-gap: 20px;
+}
+.container .footer .about-enterprise {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  flex-flow: row nowrap;
+  column-gap: 15px;
+  padding-bottom: 80px;
+}
+.container .footer .about-enterprise .col {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column nowrap;
+  row-gap: 10px;
+  color: var(--gray);
+}
+.container .footer .about-enterprise .col p {
+  width: 90%;
+}
+.container .footer .about-enterprise .col section {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: row nowrap;
+  column-gap: 10px;
+}
+.container .footer .about-enterprise .col section img {
+  width: 150px;
+}
+.container .footer .about-enterprise .col ul {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column nowrap;
+  row-gap: 15px;
+}
+.container .footer .about-enterprise .col ul li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+.container .footer .about-enterprise .col ul li a:hover {
+  text-decoration: underline;
+}
+.container .footer .about-enterprise .col:nth-child(1) {
+  width: 35%;
+}
+.container .footer .about-enterprise .col:nth-child(2) {
+  width: 15%;
+}
+.container .footer .about-enterprise .col:nth-child(3) {
+  width: 15%;
+}
+.container .footer .about-enterprise .col:nth-child(4) {
+  width: 15%;
+}
+.container .footer .about-enterprise .col:nth-child(5) {
+  width: 20%;
+}
+.container .footer .social-media {
+  width: 100%;
+  padding-block: 20px;
+  padding-bottom: 30px;
+  border-top: 2px solid #d1d1d1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+.container .footer .social-media .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+  font-size: 1.6rem;
+}
+.container .footer .social-media .social .link {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  background-color: var(--gray-acent);
+  transition: 0.3s 0.01s ease-in-out;
+  text-decoration: none;
+  color: var(--black);
+}
+.container .footer .social-media .social .link:hover {
+  background-color: var(--link-hover-white);
+}
+.container .footer .social-media .social .link:nth-child(1):hover {
+  color: #3b5998;
+}
+.container .footer .social-media .social .link:nth-child(2):hover {
+  color: #a34193;
+}
+.container .footer .social-media .payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  column-gap: 15px;
+  font-size: 1.9rem;
+}
+.container .footer .social-media .payment i:nth-child(1) {
+  color: #3b5998;
+}
+.container .footer .social-media .payment i:nth-child(2) {
+  color: #FF5F00;
+}
+.container .footer .social-media .payment i:nth-child(3) {
+  color: #0070e0;
 }
 
 /*# sourceMappingURL=app.css.map */
