@@ -1,0 +1,9 @@
+.login{
+    width: 100%;
+    min-height: 100dvh;
+    @include flex-box(space-around, center, "row nowrap");
+    overflow: hidden;
+    position: relative;
+    color: var(--white);
+    background: url("../../assets/images/login/bg-login.jpeg") no-repeat center center/cover;
+}

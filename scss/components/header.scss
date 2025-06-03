@@ -61,7 +61,7 @@
                         }
                     }
 
-                    i{
+                    i, a{
                         color: var(--black);
                         cursor: pointer;
                     }
@@ -87,12 +87,13 @@
                     cursor: pointer;
                     transition: .3s .01s ease-in-out;
 
-                    &:hover{
+                    &:hover, a:hover{
                         color: var(--link-hover);
                     }
                     
-                    i{
+                    i, a{
                         font-size: 1.5rem;
+                        color: var(--black);
                     }
                     
                     .bubble{

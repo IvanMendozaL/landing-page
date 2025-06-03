@@ -2,26 +2,159 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    border: 2px solid red;
     padding-block: 50px;
     padding-inline: 100px;
     @include flex-box(start, start, "row nowrap");
     column-gap: 20px;
     
     .filters{
-        border: 2px solid blue;
         width: 30%;
         @include flex-box(start, start, "column nowrap");
         row-gap: 15px;
-
+        overflow: hidden;
+        position: relative;
+        
         &-group{
             width: 100%;
-            border: 2px solid cyan;
+
+            strong{
+                font-size: 1.1rem;
+            }
+            
+            .options{
+                margin-top: 10px;
+                @include flex-box(start, start, "column nowrap");
+                row-gap: 5px;
+                width: 100%;
+            }
+
+            button{
+                border: none;
+                outline: none;
+                padding: 10px 25px;
+                font-size: 1rem;
+                font-weight: 500;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:nth-child(1){
+                    background-color: var(--red);
+                    color: var(--white);
+
+                    &:hover{
+                        background-color: rgb(128, 4, 4);
+                    }
+                }
+
+                &:nth-child(2){
+
+                    &:hover{
+                        background-color: #d3d3d3;
+                    }
+                }
+            }
         }
     }
     
+    // Listado de grilla
     .list{
-        border: 2px solid orange;
         width: 100%;
+        @include flex-box(start, start, "column nowrap");
+        row-gap: 15px;
+        
+        // Acciones de la grilla
+        .actions{
+            width: 100%;
+            @include flex-box(end, center, "row nowrap");
+            column-gap: 15px;
+            font-size: 1.1rem;
+            
+            &-options{
+                @include flex-box(center, center, "row nowrap");
+
+                i{
+                    padding: 5px;
+
+                    &:hover{
+                        background-color: var(--link-hover-white);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        // Grilla de productos
+        .grid{
+            width: 100%;
+            @include flex-box(center, start, "row wrap");
+            gap: 30px;
+            
+            .card{
+                width: calc(22%);
+                border: 2px solid var(--gray-acent);
+                border-radius: 5px;
+                overflow: hidden;
+                position: relative;
+                transition: .3s .01s ease-in-out;
+                text-decoration: none;
+                
+                figure{
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    
+                    img{
+                        width: 100%;
+                    }
+
+                    .percent-discount{
+                        position: absolute;
+                        top: 2%;
+                        left: 2%;
+                        background-color: var(--red);
+                        color: var(--white);
+                        padding: 5px;
+                        font-size: 0.9rem;
+                        border-radius: 5px;
+                    }
+
+                }
+                
+                .detail{
+                    width: 100%;
+                    @include flex-box(center, center, "column wrap");
+                    row-gap: 3px;
+                    background-color: var(--gray-acent);
+                    padding: 4px;
+                    color: var(--black);
+                    text-align: center;
+                    
+                    .brand{
+                        color: var(--gray);
+                    }
+                    
+                    .product{
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                    
+                    .prices{
+                        width: 100%;
+                        @include flex-box(center, center, "row wrap");
+                        column-gap: 5px;
+                        font-size: 1rem;
+                        
+                    }
+
+                    .tatch{
+                        text-decoration: line-through;
+                    }
+                }
+
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
+        }
     }
 }

@@ -67,7 +67,9 @@
 
                     <!-- Account -->
                     <div class="account-details-item" title="Cuenta">
-                        <i class="fa-regular fa-user"></i>
+                        <a href="./login.html">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
                     </div>
 
                     <!-- Favs -->
@@ -141,7 +143,19 @@
             <div class="filters">
                 <h3>Filtros</h3>
 
-                <!-- Grupo de opcion de filtro -->
+                <!-- Grupo de opcion de filtro para precio -->
+                <div class="filters-group">
+                    <strong>Precio</strong>
+
+                    <!-- Opciones de filtro -->
+                    <div class="options">
+                        <div class="option">
+                            <input type="range">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grupo de opcion de filtro para la marca -->
                 <div class="filters-group">
                     <strong>Marca</strong>
 
@@ -154,18 +168,377 @@
 
                         <div class="option">
                             <input type="checkbox" name="marca2" id="marca2">
-                            <label for="marca2">Nike</label>
+                            <label for="marca2">Addidas</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" name="marca3" id="marca3">
+                            <label for="marca3">Tommy</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" name="marca4" id="marca4">
+                            <label for="marca4">Under Armour</label>
                         </div>
                     </div>
+                </div>
+
+                <!-- Grupo de opcion de filtro para la talla -->
+                <div class="filters-group">
+                    <strong>Talla</strong>
+
+                    <!-- Opciones de filtro -->
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" name="talla1" id="talla1">
+                            <label for="talla1">M</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" name="talla2" id="talla2">
+                            <label for="talla2">L</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" name="talla3" id="talla3">
+                            <label for="talla3">XL</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" name="talla4" id="talla4">
+                            <label for="talla4">2XL</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grupo de opcion de filtro para el tipo de producto -->
+                <div class="filters-group">
+                    <strong>Tipo de producto</strong>
+
+                    <!-- Opciones de filtro -->
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" name="tipo1" id="tipo1">
+                            <label for="tipo1">Zapatos</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" name="tipo2" id="tipo2">
+                            <label for="tipo2">Camisas</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" name="tipo3" id="tipo3">
+                            <label for="tipo3">Gorras</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" name="tipo3" id="tipo3">
+                            <label for="tipo3">Jeans</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grupo de opcion de filtro para el tipo de producto -->
+                <div class="filters-group">
+                    <!-- Opciones de filtro -->
+                    <button>Buscar</button>
+                    <button>Limpiar</button>
                 </div>
             </div>
 
             <!-- List -->
             <div class="list">
-                <h2>Listado de productos</h2>
+                
+                <!-- Sort options -->
+                <div class="actions">
+                    <p>38 productos</p>
+                    <div class="actions-options">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-table-cells"></i>
+                    </div>
+                </div>
+
+                <!-- Products grid -->
+                <div class="grid">
+
+                    <!-- Card 1 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/originals/df/ee/0a/dfee0a9a104916ddb1229d6a5a94055e.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/236x/12/ac/c7/12acc73b33339ccf09eb0f429fa76529.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://m.media-amazon.com/images/I/41E0lgCWrjL._AC_.jpg" alt="">
+                            <span class="percent-discount">
+                                -20%
+                            </span>
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price tatch">$67.99</strong>
+                                <div class="offer">$47.99</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Card 4 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/236x/92/32/e1/9232e11798515295dd9f33aba12bbbc5.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 5 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/236x/69/72/ea/6972ea17fdae166993d005d94693a78b.jpg" alt="">
+                            <span class="percent-discount">
+                                -35%
+                            </span>
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price tatch">$27.99</strong>
+                                <div class="offer">$17.99</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 6 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/originals/df/ee/0a/dfee0a9a104916ddb1229d6a5a94055e.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 7 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/236x/12/ac/c7/12acc73b33339ccf09eb0f429fa76529.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 8 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://m.media-amazon.com/images/I/41E0lgCWrjL._AC_.jpg" alt="">
+                            <span class="percent-discount">
+                                -20%
+                            </span>
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price tatch">$67.99</strong>
+                                <div class="offer">$47.99</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 9 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/originals/df/ee/0a/dfee0a9a104916ddb1229d6a5a94055e.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 10 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/236x/12/ac/c7/12acc73b33339ccf09eb0f429fa76529.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 11 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://m.media-amazon.com/images/I/41E0lgCWrjL._AC_.jpg" alt="">
+                            <span class="percent-discount">
+                                -20%
+                            </span>
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price tatch">$67.99</strong>
+                                <div class="offer">$47.99</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Card12  -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/236x/92/32/e1/9232e11798515295dd9f33aba12bbbc5.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 13 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/236x/69/72/ea/6972ea17fdae166993d005d94693a78b.jpg" alt="">
+                            <span class="percent-discount">
+                                -35%
+                            </span>
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price tatch">$27.99</strong>
+                                <div class="offer">$17.99</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 14 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/originals/df/ee/0a/dfee0a9a104916ddb1229d6a5a94055e.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 15 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://i.pinimg.com/236x/12/ac/c7/12acc73b33339ccf09eb0f429fa76529.jpg" alt="">
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price">$17.99</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 16 -->
+                    <a href="#" class="card">
+                        <figure>
+                            <img src="https://m.media-amazon.com/images/I/41E0lgCWrjL._AC_.jpg" alt="">
+                            <span class="percent-discount">
+                                -20%
+                            </span>
+                        </figure>
+
+                        <div class="detail">
+                            <p class="brand">NIKE</p>
+                            <p class="product">Sueter de marca nike</p>
+                            <div class="prices">
+                                <strong class="price tatch">$67.99</strong>
+                                <div class="offer">$47.99</div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
             </div>
         </div>
 
+        <!-- Subscribe section -->
+        <section class="subscribe">
+            <h2>Suscribete a nuestro boletín de noticias y avisos</h2>
+            <p>Suscríbete a nuestro último boletín para recibir noticias sobre descuentos especiales y próximas ventas.</p>
+            <form method="" action="" class="input-subscribe">
+                <input type="text" placeholder="ejemplo@gmail.com" minlength="3" maxlength="255">
+                <button>SUBSCRIBETE</button>
+            </form>
+        </section>
 
         <!-- Footer page -->
         <footer class="footer">

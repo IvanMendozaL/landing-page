@@ -1,0 +1,26 @@
+.form{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    @include flex-box(center, center, "column wrap");
+    row-gap: 10px;
+    
+    .actions{
+        @include flex-box(center, center, "column wrap");
+        row-gap: 10px;
+
+        a{
+            color: var(--white);
+            text-decoration: none;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
